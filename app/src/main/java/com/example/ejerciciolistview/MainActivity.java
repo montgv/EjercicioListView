@@ -11,7 +11,7 @@ import com.example.ejerciciolistview.databinding.ActivityMainBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private List<Personas> miLista;
@@ -32,13 +32,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         MiAdaptador miAdaptador = new MiAdaptador(this, R.layout.opciones_item, miLista);
         binding.listView.setAdapter(miAdaptador);
 
-        binding.listView.setOnItemClickListener(this);
+        binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                pasarPantalla(i);
+            }
+        });
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        if (binding.listView.getCheckedItemPosition() == i) {
+    private void pasarPantalla(int i) {
 
-        }
     }
 }
