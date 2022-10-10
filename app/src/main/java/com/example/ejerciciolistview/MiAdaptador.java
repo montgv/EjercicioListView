@@ -45,9 +45,9 @@ public class MiAdaptador extends ArrayAdapter {
         textViewCiclo.setText(personaActual.getCiclo());
 
         if (personaActual.getSexo() == "Hombre") {
-            imageViewPersona.setImageResource(R.drawable.);
+            imageViewPersona.setImageResource(R.drawable.boy_avatar_icon_148454);
         } else {
-            imageViewPersona.setImageResource(R.drawable.);
+            imageViewPersona.setImageResource(R.drawable.girl_avatar_icon_148461);
         }
 
         return v;

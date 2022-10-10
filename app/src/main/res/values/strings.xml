@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EjercicioListView</string>
+    <string name="volver">VOLVER</string>
 </resources>
