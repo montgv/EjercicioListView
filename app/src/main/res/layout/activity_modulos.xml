@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityModulos">
+    tools:context=".ActivityModulos"
+    android:id="@+id/pantalla">
 
     <ImageView
         android:id="@+id/imageViewCiclos"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="TextView"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewCiclos" />

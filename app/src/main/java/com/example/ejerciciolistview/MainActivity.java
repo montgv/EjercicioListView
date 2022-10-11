@@ -2,6 +2,7 @@ package com.example.ejerciciolistview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pasarPantalla(int i) {
+        Intent intent = new Intent(this, ActivityModulos.class);
 
+        String ciclo = miLista.get(i).getCiclo();
+        intent.putExtra("ciclo", ciclo);
+
+        startActivity(intent);
+        finish();
     }
 }
