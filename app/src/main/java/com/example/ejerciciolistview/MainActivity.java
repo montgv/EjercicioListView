@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
     //Creamos el binding que nos sirve para la vinculacion de vista
     private ActivityMainBinding binding;
     //Creamos una lista de la clase Personas
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     //Definimos la funcion que crea un intent para que se vaya a la ActivityModulos, y que realice el
     //envio de informacion de una actividad a otra, que realice el salta a la nueva actividad y que
     //cuando la actividad haya terminado que se cierre

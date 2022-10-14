@@ -15,7 +15,6 @@ import java.util.List;
 
 //Declaramos la clase MiAdaptador que extiende de ArrayAdapter
 public class MiAdaptador extends ArrayAdapter {
-
     //Declaramos los diferentes atributos que tiene esta clase
     private Context ctx;
     private int layoutTemplate;
@@ -58,7 +57,7 @@ public class MiAdaptador extends ArrayAdapter {
         } else {
             imageViewPersona.setImageResource(R.drawable.girl_avatar_icon_148461);
         }
-        //devuelve la vista
+        //Devuelve la vista
         return v;
     }
 }

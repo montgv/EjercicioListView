@@ -11,7 +11,6 @@ import android.view.View;
 import com.example.ejerciciolistview.databinding.ActivityModulosBinding;
 
 public class ActivityModulos extends AppCompatActivity {
-
     //Creamos el binding que nos sirve para la vinculacion de vista
     private ActivityModulosBinding binding2;
 
@@ -66,7 +65,6 @@ public class ActivityModulos extends AppCompatActivity {
             });
         }
     }
-
     //Definimos la funcion que crea un intent para que se vaya al MainActivity, que realice el salto
     //a la nueva actividad y que cuando la actividad haya terminado que se cierre
     private void volver () {
